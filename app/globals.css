@@ -4,18 +4,58 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: blue;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.btn {
+  @apply p-3 text-lg font-semibold rounded-lg shadow-md transition-transform duration-200 ease-in-out;
+}
+.btn:hover {
+  @apply transform scale-110;
+}
+.btn:active {
+  @apply transform scale-95;
+}
+.btn-primary {
+  @apply bg-teal-500 text-white;
+}
+.btn-primary:hover {
+  @apply bg-teal-400;
+}
+.btn-light {
+  @apply bg-gray-700 text-white;
+}
+.btn-light:hover {
+  @apply bg-gray-600;
+}
+.btn-accent {
+  @apply bg-red-500 text-white;
+}
+.btn-accent:hover {
+  @apply bg-red-400;
+}
+
+
+@keyframes gradient-x {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease infinite;
+}
+
