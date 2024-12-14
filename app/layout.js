@@ -20,7 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-black">
+      {/* <body className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-black" style={{display:'flex', alignItems:'center', justifyContent:'center', height:'100vh'}}> */}
+      <body>
         {children}
       </body>
     </html>

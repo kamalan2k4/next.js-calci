@@ -36,6 +36,7 @@ export default function Calculator() {
   };
 
   return (
+    <div className="h-screen flex items-center justify-center  w-4/12">
     <div className="p-6 bg-gray-900 text-white w-full  max-w-md rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
       <div className="text-3xl font-bold text-center mb-4 text-teal-400">
         Calculator
@@ -121,6 +122,7 @@ export default function Calculator() {
           =
         </button>
       </div>
+    </div>
     </div>
   );
 }
